@@ -1,8 +1,8 @@
-#usando while/else, para usar conta bancária
+#início do programa 
 opcao = -1
 saldo = 1000
-saques = [] #criando uma lista de saques, para ser registrados no extrato
-#inicio do programa
+saques = [] #criando uma lista de saques, para serem registrados no extrato
+
 print('Bem vindo ao seu banco!, como podemos lhe ajudar?\nEscolha uma das opções para prosseguir no seu atendimento:\n')
 print('Saldo:{}\n'.format(saldo))
 
@@ -12,7 +12,7 @@ while opcao != 0:
         saque = float(input('Digite o valor do saque:'))
         if saldo >= saque:
             saldo -= saque
-            saques.append(saque) #registra o saque na lista 
+            saques.append(saque) #registrando o saque na lista 
             print('Saque de {} realizado com sucesso!\nSeu saldo ficou:{}\n'.format(saque,saldo)) 
         else:
             print('saldo insuficiente')
@@ -29,4 +29,3 @@ while opcao != 0:
         print('opção invalida')
 else:
     print('obrigado por usar nosso sistema bancário, até logo!')
-    
